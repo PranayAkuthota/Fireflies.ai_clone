@@ -81,9 +81,9 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
           date: new Date().toISOString(),
           participants: [
             { name: "Pranaykumar", email: "pranay@scaler.ai" },
-            { name: "Alice Vance", email: "alice@scaler.ai" }
+            { name: "Anand Chakravarthy", email: "alice@scaler.ai" }
           ],
-          transcript_text: "Alice Vance: Welcome everyone, the Fireflies capturing bot is now connected to the meeting and recording audio. Let's make sure our live seek syncing works.\nPranaykumar: Thanks, Alice. This bot captures everything and syncs the transcript automatically."
+          transcript_text: "Anand Chakravarthy: Welcome everyone, the Fireflies capturing bot is now connected to the meeting and recording audio. Let's make sure our live seek syncing works.\nPranaykumar: Thanks, Alice. This bot captures everything and syncs the transcript automatically."
         }),
       });
 
