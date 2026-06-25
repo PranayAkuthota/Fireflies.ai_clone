@@ -287,7 +287,7 @@ export default function Home() {
                 <div className="h-8 w-8 animate-spin rounded-full border-4 border-indigo-100 border-t-indigo-600"></div>
                 <span className="text-sm font-semibold">Scanning meeting storage...</span>
               </div>
-            ) : activeMeetingTab === "shared" || meetings.length === 0 ? (
+            ) : activeMeetingTab === "shared" || (meetings.filter(m => m.title.toLowerCase().includes(searchQuery.toLowerCase())).length === 0) ? (
               <div className="flex flex-col items-center justify-center py-20 text-slate-400 text-center">
                 <Video className="h-12 w-12 text-slate-200 mb-2" />
                 <p className="text-sm font-bold text-slate-700">Looks like you haven't recorded a meeting yet</p>
@@ -315,7 +315,7 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-sm text-slate-700">
-                    {meetings.map((meeting) => (
+                    {meetings.filter(m => m.title.toLowerCase().includes(searchQuery.toLowerCase())).map((meeting) => (
                       <tr 
                         key={meeting.id} 
                         className="hover:bg-slate-50/50 transition-colors group cursor-pointer font-medium"
