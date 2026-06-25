@@ -83,7 +83,7 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
             { name: "Pranaykumar", email: "pranay@scaler.ai" },
             { name: "Anand Chakravarthy", email: "alice@scaler.ai" }
           ],
-          transcript_text: "Anand Chakravarthy: Welcome everyone, the Fireflies capturing bot is now connected to the meeting and recording audio. Let's make sure our live seek syncing works.\nPranaykumar: Thanks, Alice. This bot captures everything and syncs the transcript automatically."
+          transcript_text: "Anand Chakravarthy: Welcome everyone, the Fireflies capturing bot is now connected to the meeting and recording audio. Let's make sure our live seek syncing works.\nPranaykumar: Thanks, Anand. This bot captures everything and syncs the transcript automatically."
         }),
       });
 
@@ -355,7 +355,7 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
                   type="text"
                   value={participantsInput}
                   onChange={(e) => setParticipantsInput(e.target.value)}
-                  placeholder="Alice (alice@scaler.ai), Bob (bob@scaler.ai)"
+                  placeholder="Anand (alice@scaler.ai), Vikram (bob@scaler.ai)"
                   className="w-full rounded-md border border-slate-200 px-3 py-2 text-xs text-slate-800 placeholder-slate-400 focus:border-indigo-500 focus:outline-none"
                 />
               </div>
@@ -382,7 +382,7 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
                   rows={4}
                   value={transcriptText}
                   onChange={(e) => setTranscriptText(e.target.value)}
-                  placeholder="Paste dialog lines:&#10;Alice: Welcome everyone...&#10;Bob: Thanks Alice..."
+                  placeholder="Paste dialog lines:&#10;Anand: Welcome everyone...&#10;Vikram: Thanks Anand..."
                   className="w-full rounded-md border border-slate-200 px-3 py-2 text-xs text-slate-800 focus:border-indigo-500 focus:outline-none font-mono"
                 ></textarea>
               </div>

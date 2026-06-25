@@ -62,7 +62,7 @@ async def seed_data():
                     speaker="Vikram Kumar",
                     start_time=13.0,
                     end_time=25.2,
-                    text="Thanks, Alice. I've finished the initial backend structure using FastAPI and SQLAlchemy. All database tables and models are normalized and migrations are ready."
+                    text="Thanks, Anand. I've finished the initial backend structure using FastAPI and SQLAlchemy. All database tables and models are normalized and migrations are ready."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting1.id,
@@ -76,7 +76,7 @@ async def seed_data():
                     speaker="Anand Chakravarthy",
                     start_time=43.5,
                     end_time=58.1,
-                    text="That sounds great. Bob, can you make sure we have a robust database seed script? The interviewer needs to see the app with sample data immediately upon launch."
+                    text="That sounds great. Vikram, can you make sure we have a robust database seed script? The interviewer needs to see the app with sample data immediately upon launch."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting1.id,
@@ -90,7 +90,7 @@ async def seed_data():
                     speaker="Anand Chakravarthy",
                     start_time=72.5,
                     end_time=91.4,
-                    text="Awesome. Charlie, how are we planning to synchronize the transcript highlight with the audio seek bar? We need to make sure this is highly performant."
+                    text="Awesome. Priya, how are we planning to synchronize the transcript highlight with the audio seek bar? We need to make sure this is highly performant."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting1.id,
@@ -104,14 +104,14 @@ async def seed_data():
                     speaker="Anand Chakravarthy",
                     start_time=123.0,
                     end_time=150.0,
-                    text="Perfect, let's proceed with that. Let's list the action items. Bob will write the seeding script, and Charlie will build the player sync. I will write the API schemas and review the architecture."
+                    text="Perfect, let's proceed with that. Let's list the action items. Vikram will write the seeding script, and Priya will build the player sync. I will write the API schemas and review the architecture."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting1.id,
                     speaker="Priya Shetty",
                     start_time=151.0,
                     end_time=185.0,
-                    text="Got it, Alice. I'll also add a search bar inside the transcript to search and highlight keywords. It's a nice core feature to have."
+                    text="Got it, Anand. I'll also add a search bar inside the transcript to search and highlight keywords. It's a nice core feature to have."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting1.id,
@@ -139,7 +139,7 @@ async def seed_data():
                     speaker="Priya Shetty",
                     start_time=246.0,
                     end_time=250.0,
-                    text="Thanks, Alice. Bye."
+                    text="Thanks, Anand. Bye."
                 )
             ]
             session.add_all(segments1)
@@ -175,7 +175,7 @@ async def seed_data():
                     meeting_id=meeting1.id,
                     title="Action Item Assignment & Wrap Up",
                     start_time=123.0,
-                    summary="Anand Chakravarthy summarizes action items, Charlie outlines transcript search highlights, Bob details the dynamic AI chat endpoint, and they conclude the meeting."
+                    summary="Anand Chakravarthy summarizes action items, Priya outlines transcript search highlights, Vikram details the dynamic AI chat endpoint, and they conclude the meeting."
                 )
             ]
             session.add_all(chapters1)
@@ -208,14 +208,14 @@ async def seed_data():
                     speaker="Anand Chakravarthy",
                     start_time=0.0,
                     end_time=15.0,
-                    text="Hi David, thanks for jump-starting the WorkHive architecture review. Let's lock down our database schema decisions and migration strategies."
+                    text="Hi Krishna, thanks for jump-starting the WorkHive architecture review. Let's lock down our database schema decisions and migration strategies."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting2.id,
                     speaker="Krishna",
                     start_time=15.5,
                     end_time=38.4,
-                    text="Absolutely, Alice. I suggest using Alembic for migrations. It handles table adjustments cleanly. In terms of normalization, we definitely need a separate Participant table to avoid repeating strings."
+                    text="Absolutely, Anand. I suggest using Alembic for migrations. It handles table adjustments cleanly. In terms of normalization, we definitely need a separate Participant table to avoid repeating strings."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting2.id,
@@ -250,7 +250,7 @@ async def seed_data():
                     speaker="Anand Chakravarthy",
                     start_time=135.5,
                     end_time=165.0,
-                    text="Excellent plan, David. Let's run with that. Thanks for your time, let's get building."
+                    text="Excellent plan, Krishna. Let's run with that. Thanks for your time, let's get building."
                 )
             ]
             session.add_all(segments2)
@@ -266,7 +266,7 @@ async def seed_data():
                     meeting_id=meeting2.id,
                     title="Schema Normalization Discussion",
                     start_time=0.0,
-                    summary="Alice and David align on database normalization, specifically isolating a Participant table to enable clean participant search indexing."
+                    summary="Anand and Krishna align on database normalization, specifically isolating a Participant table to enable clean participant search indexing."
                 ),
                 Chapter(
                     meeting_id=meeting2.id,
@@ -278,7 +278,7 @@ async def seed_data():
                     meeting_id=meeting2.id,
                     title="Summary Extraction & Next Steps",
                     start_time=106.0,
-                    summary="David outlines plans for writing tests and designing a dynamic mock AI summarizer using Python keyword matching."
+                    summary="Krishna outlines plans for writing tests and designing a dynamic mock AI summarizer using Python keyword matching."
                 )
             ]
             session.add_all(chapters2)
@@ -315,14 +315,14 @@ async def seed_data():
                     speaker="Meghana",
                     start_time=20.5,
                     end_time=55.0,
-                    text="Hey Alice! Yes, the social media campaign is going well. We've seen a 12% click-through-rate increase on Twitter and LinkedIn. However, we're still lagging on organic newsletter signups."
+                    text="Hey Anand! Yes, the social media campaign is going well. We've seen a 12% click-through-rate increase on Twitter and LinkedIn. However, we're still lagging on organic newsletter signups."
                 ),
                 TranscriptSegment(
                     meeting_id=meeting3.id,
                     speaker="Anand Chakravarthy",
                     start_time=55.5,
                     end_time=85.0,
-                    text="Understood. Let's run a joint webinar next Thursday about utilizing AI for workspace note-taking. That should drive direct newsletter signups. Eve, can you draft the webinar landing page?"
+                    text="Understood. Let's run a joint webinar next Thursday about utilizing AI for workspace note-taking. That should drive direct newsletter signups. Meghana, can you draft the webinar landing page?"
                 ),
                 TranscriptSegment(
                     meeting_id=meeting3.id,
@@ -350,7 +350,7 @@ async def seed_data():
             
             summary3 = MeetingSummary(
                 meeting_id=meeting3.id,
-                summary_text="Anand Chakravarthy and Meghana reviewed weekly marketing achievements, noting a 12% boost in social media CTR. To address slow newsletter signups, they decided to co-host an AI Workspace Note-Taking webinar next Thursday. Eve will construct the landing page registration form and graphics, while Alice coordinates slides and coordinates the guest speaker."
+                summary_text="Anand Chakravarthy and Meghana reviewed weekly marketing achievements, noting a 12% boost in social media CTR. To address slow newsletter signups, they decided to co-host an AI Workspace Note-Taking webinar next Thursday. Meghana will construct the landing page registration form and graphics, while Anand coordinates slides and coordinates the guest speaker."
             )
             session.add(summary3)
             
@@ -359,19 +359,19 @@ async def seed_data():
                     meeting_id=meeting3.id,
                     title="Marketing Stats Review",
                     start_time=0.0,
-                    summary="Alice and Eve discuss the recent 12% CTR increase on social media, but note sluggishness in direct newsletter signups."
+                    summary="Anand and Meghana discuss the recent 12% CTR increase on social media, but note sluggishness in direct newsletter signups."
                 ),
                 Chapter(
                     meeting_id=meeting3.id,
                     title="Webinar Strategy Proposal",
                     start_time=55.5,
-                    summary="Alice proposes holding a joint webinar next Thursday to drive signups. Eve agrees to prepare registrations and social assets."
+                    summary="Anand proposes holding a joint webinar next Thursday to drive signups. Meghana agrees to prepare registrations and social assets."
                 ),
                 Chapter(
                     meeting_id=meeting3.id,
                     title="Asset Scheduling & Next Sync",
                     start_time=120.5,
-                    summary="Alice assigns herself slide creation and speaker coordination, scheduling the next progress review for Monday."
+                    summary="Anand assigns herself slide creation and speaker coordination, scheduling the next progress review for Monday."
                 )
             ]
             session.add_all(chapters3)
