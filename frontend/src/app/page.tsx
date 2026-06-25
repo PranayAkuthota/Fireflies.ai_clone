@@ -36,6 +36,7 @@ import { SubSidebar } from "@/components/SubSidebar";
 import { API_BASE_URL } from "@/config";
 import { Meeting, Participant } from "@/types";
 import { FredLogo } from "@/components/icons";
+import { toast } from "react-hot-toast";
 
 export default function Home() {
   const [meetings, setMeetings] = useState<Meeting[]>([]);
