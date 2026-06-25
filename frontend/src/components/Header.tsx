@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useActiveMeeting } from "@/context/ActiveMeetingContext";
 import { usePathname } from "next/navigation";
+import { toast } from "react-hot-toast";
 
 interface HeaderProps {
   onOpenCreateModal?: () => void;
@@ -59,7 +60,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenCreateModal }) => {
         </span>
 
         {/* Upgrade Button: Clean 32px height, rounded-md and bold font style */}
-        <button className="hidden sm:inline-flex h-8 items-center justify-center rounded-md border border-[#a7f0d6] bg-[#e2f7f0] px-4 text-xs font-bold text-[#107b5a] hover:bg-[#d2f3e8] transition-colors cursor-pointer">
+        <button 
+          onClick={() => toast("Upgrade features coming soon!")}
+          className="hidden sm:inline-flex h-8 items-center justify-center rounded-md border border-[#a7f0d6] bg-[#e2f7f0] px-4 text-xs font-bold text-[#107b5a] hover:bg-[#d2f3e8] transition-colors cursor-pointer"
+        >
           Upgrade
         </button>
 
@@ -85,18 +89,27 @@ export const Header: React.FC<HeaderProps> = ({ onOpenCreateModal }) => {
         <div className="h-4 w-[1px] bg-slate-200"></div>
 
         {/* Purple Microphone icon */}
-        <button className="text-[#7047eb] hover:text-[#5b34d7] transition-colors cursor-pointer">
+        <button 
+          onClick={() => toast("Live speech-to-text transcription coming soon!")}
+          className="text-[#7047eb] hover:text-[#5b34d7] transition-colors cursor-pointer"
+        >
           <Mic className="h-4.5 w-4.5" />
         </button>
 
         {/* Notifications Bell */}
-        <button className="relative text-slate-400 hover:text-slate-600 transition-colors cursor-pointer">
+        <button 
+          onClick={() => toast("Notifications coming soon!")}
+          className="relative text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
+        >
           <Bell className="h-4.5 w-4.5" />
           <span className="absolute top-0.5 right-0.5 h-2 w-2 rounded-full bg-rose-500 ring-2 ring-white"></span>
         </button>
 
         {/* Profile Avatar */}
-        <div className="h-8 w-8 rounded-full bg-indigo-100 border border-slate-200 flex items-center justify-center text-indigo-700 font-bold text-xs cursor-pointer select-none">
+        <div 
+          onClick={() => toast("User authentication & profile coming soon!")}
+          className="h-8 w-8 rounded-full bg-indigo-100 border border-slate-200 flex items-center justify-center text-indigo-700 font-bold text-xs cursor-pointer select-none"
+        >
           PK
         </div>
       </div>

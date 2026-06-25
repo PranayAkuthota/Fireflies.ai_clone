@@ -91,7 +91,7 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
         throw new Error("Failed to invite assistant bot.");
       }
 
-      setInfoMessage("Fireflies Bot is joining the call. The transcript and summaries will populate momentarily!");
+      setInfoMessage("Coming soon: Real-time bot joining live calls!");
       
       // Delay closing to show mock joining message
       setTimeout(() => {

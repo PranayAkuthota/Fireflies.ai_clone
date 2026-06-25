@@ -191,7 +191,10 @@ export default function Home() {
                 Hosted by me
               </button>
               <button 
-                onClick={() => setActiveMeetingTab("shared")}
+                onClick={() => {
+                  setActiveMeetingTab("shared");
+                  toast("Team sharing & collaboration coming soon!");
+                }}
                 className={`h-full px-4 rounded text-xs font-semibold transition-all cursor-pointer ${
                   activeMeetingTab === "shared"
                     ? "text-slate-800 bg-white shadow-sm"
@@ -395,7 +398,10 @@ export default function Home() {
               <p className="text-[10px] text-slate-500 mt-0.5 leading-relaxed">
                 get answers with full context.
               </p>
-              <button className="text-[10px] font-bold text-[#6d28d9] hover:underline mt-2 block cursor-pointer">
+              <button 
+                onClick={() => toast("Integrations coming soon!")}
+                className="text-[10px] font-bold text-[#6d28d9] hover:underline mt-2 block cursor-pointer"
+              >
                 Connect
               </button>
             </div>
