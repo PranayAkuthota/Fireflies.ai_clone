@@ -6,6 +6,13 @@ This platform replicates the design, user experience, and core post-meeting work
 
 ---
 
+## 🚀 Live Deployments
+
+- **Frontend (Vercel)**: [https://fireflies-ai-clone.vercel.app/](https://fireflies-ai-clone.vercel.app/)
+- **Backend API (Render)**: [https://fireflies-ai-clone.onrender.com/docs](https://fireflies-ai-clone.onrender.com/docs) *(Swagger UI)*
+
+---
+
 ## 1. Technical Stack
 
 - **Frontend**: Next.js 15 (TypeScript, React 19, Tailwind CSS v4, Lucide React Icons).
