@@ -360,6 +360,22 @@ export const CreateMeetingModal: React.FC<CreateMeetingModalProps> = ({
                 />
               </div>
 
+              {/* Mock Audio upload input for Speech-to-text */}
+              <div>
+                <label className="block text-xs font-bold text-slate-500 mb-1">
+                  Upload Audio File (.mp3, .wav)
+                </label>
+                <input
+                  type="file"
+                  accept=".mp3,.wav"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toast("Actual speech-to-text transcription coming soon!");
+                  }}
+                  className="w-full text-[10px] text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-[10px] file:font-bold file:bg-rose-50 file:text-rose-600 hover:file:bg-rose-100 cursor-pointer border border-dashed border-slate-200 p-2 rounded-md"
+                />
+              </div>
+
               {/* File upload input */}
               <div>
                 <label className="block text-xs font-bold text-slate-500 mb-1">
