@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fireflies-backend
+    env: python
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && bash start.sh"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:////data/fireflies.db
+    disk:
+      name: sqlite-data
+      mountPath: /data
+      sizeGB: 1
